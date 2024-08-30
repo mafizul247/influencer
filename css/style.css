@@ -1,0 +1,264 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.mobile-header {
+    display: none;
+}
+
+button {
+    background-color: #E02C6D;
+    border: none;
+    padding: 10px 20px;
+    color: #FFF;
+}
+button i {
+    margin-left: 5px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.nav h3 {
+    cursor: pointer;
+}
+
+.nav h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav h3 a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+header ul {
+    display: inline-flex;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header ul li:hover {
+    text-decoration: underline;
+    color: blue;
+    background-color: gainsboro;
+    padding: 10px 20px;
+}
+
+header i {
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header i:hover {
+    text-decoration: underline;
+    color: blue;
+    background-color: gainsboro;
+}
+
+.main-section {
+    padding: 0 100px;
+}
+
+/* Banner Section  */
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.banner-content h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.banner-content p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.banner-content button {
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+.banner-image {
+    text-align: right;
+}
+
+.banner-image {
+    background: url('./../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.our-client {
+    border-top: 1px solid #cccfd1;
+    border-bottom: 1px solid #cccfd1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 50px;
+}
+
+.poputer {
+    margin: 50px 0;
+}
+
+.section-title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px 10px rgba(155, 154, 154, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+}
+
+.card .dec {
+    color: #787885;
+}
+
+.see-more {
+    color: #E02C6D;
+    margin-top: 20px;
+    text-align: right;
+}
+
+
+/* Feture Section  */
+.feature{ 
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.feature-content p {
+    color: #787885;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #0A0826;
+    color: #FFF;
+    padding: 40px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+/* Mobile Responsive  */
+
+@media screen and (max-width: 576px) {
+    header h3, .nav-items {
+        display: none;
+    }
+
+    .mobile-header {
+        padding: 5px 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mobile-header a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .mobile-header i, h3{
+        font-size: 25px;
+    }
+
+    .main-section {
+        padding: 0 10px;
+    }
+
+    /* Banner section  */
+    .banner {
+        grid-template-columns: none;
+        grid-auto-flow: dense; 
+        text-align: center;
+    }
+
+    .banner-content h1 {
+        font-size: 30px;
+    }
+    .banner-image img {
+        width: 100%;
+    }
+
+    .our-client {
+        border-top: 1px solid #cccfd1;
+        border-bottom: 1px solid #cccfd1;
+        padding: 10px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .feature {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .feature-content {
+        text-align: center;
+    }
+    .feature-img img {
+        width: 100%;
+    }
+}
