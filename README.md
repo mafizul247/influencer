@@ -38,13 +38,6 @@ To run the website locally:
     ```
 3. Open the `index.html` file in your browser.
 
-## Contributing
-
-If you would like to contribute to the project, feel free to fork the repository and submit a pull request. Contributions are welcome!
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Contact
 
